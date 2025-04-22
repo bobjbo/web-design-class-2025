@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdowns and Accordions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-purple.css">
+    </head>
+
+    <body>
+        <div class="w3-container w3-theme-l2 w3-center">
+            <h2>Fun Facts About Resonite!</h2>
+        </div>
+        
+        <br>
+
+        <!-- Question #1 - regular answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-left-align" style="width: 50%; color:white; background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">1. How did Resonite come about? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo1" class="w3-card-4 w3-theme-d1 w3-hide" style="padding: 1%; margin: 1%">
+                <h4>Resonite started as a game known as NeosVR which was much more limited than Resonite is and was co owned. This game was highly praised for how revolutionary it was but because of one of the developers wanting to add crypto currency to the game the two owners split paths, in turn Resonite was born!</h4>
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+        <!-- add breaks as needed for space between buttons -->
+        <br>
+        <br>
+        <!-- repeat the code two or three times for additional questions-->
+
+        <!-- Question #2 - img answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-light-blue w3-left-align" style="width: 50%">2. What is the name of Resonites icon? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo2" class="w3-container w3-hide">
+                <h4>A Gloopie!</h4>
+                <img src="images/gloopie.png" width="25%">
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+        <br>
+        <br>
+
+        <!-- Question #3 - normal answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-yellow w3-left-align" style="width: 50%">3. Who created Resonite? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo3" class="w3-card-4 w3-hide" style="padding: 1%; margin:1%">
+                <header>
+                    <h4>Yellow Dog Man Studios!</h4>
+                </header>
+
+                <div>
+                    <p>
+                        This studio is run by Frooxius who was the main developer and co owner of NeosVR as the engine it runs in is coined "Froox Engine" which is highly mutlithreaded but restricted by unity until the awwdio system gets finished.
+                    </p>
+                </div>
+
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+       <br>
+       <br>
+
+        <!-- Question #4 - img answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-theme-l1 w3-left-align" style="width: 50%">4. Can you code in Resonite? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo4" class="w3-card-4 w3-hide" style="padding: 1%; margin:1%">
+                <h4>YES, You very much can code in resonite.</h4>
+                <p>Resonite brands itself with a in house built coding language called ProtoFlux which is node based and running in a virtual machine along side the game!</p>
+                <img src="images/Protoflux_example_repeat_01.webp" width="35%">
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+        <br>
+        <br>
+
+        <!-- Question #5 - img answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-indigo w3-left-align" style="width: 50%">5. Can you code in Resonite? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo5" class="w3-card-4 w3-hide" style="padding: 1%; margin:1%">
+                <h4>YES, You very much can code in resonite.</h4>
+                <p>Resonite brands itself with a in house built coding language called ProtoFlux which is node based and running in a virtual machine along side the game!</p>
+                <img src="images/Protoflux_example_repeat_01.webp" width="35%">
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+        <br>
+        <br>
+
+        <!-- footer with your name on it -->
+
+        <footer class="w3-container w3-theme-d5 w3-center">bobjbo <a href="../index.html">Back</a></footer>
+
+
+        <!-- DO NOT CHANGE THE SCRIPT -->
+        <script>
+        function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+
+        </script>
+    </body>
+</html>

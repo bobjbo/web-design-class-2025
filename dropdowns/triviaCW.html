@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdowns and Accordions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-purple.css">
+    </head>
+
+    <body>
+        <div class="w3-container w3-pink w3-center">
+            <h2> Fun Facts About Ice Cream</h2>
+        </div>
+        
+        <br>
+
+        <!-- Question #1 - regular answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-pink w3-left-align" style="width: 50%">1. When was ice cream invented? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo1" class="w3-container w3-hide">
+                <h4>2nd century B.C.</h4>
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+        <!-- add breaks as needed for space between buttons -->
+        <br>
+        <br>
+        <!-- repeat the code two or three times for additional questions-->
+
+        <!-- Question #2 - img answer-->
+        <!-- create a container for an accordion style button -->
+        <div class="w3-container w3-auto">
+            <!-- accordion style button, only change color-->
+            <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-pale-green w3-left-align" style="width: 50%">2. Where was ice cream invented? &#9660;</button>
+            <!-- div for the answer that will drop down once a button is clicked -->
+            <div id="Demo2" class="w3-container w3-hide">
+                <h4>China</h4>
+                <img src="images/china.jpg" width="50%">
+            </div> <!--end of answer div-->
+        </div> <!-- closing <div> for an accordion style button -->
+
+        <br>
+
+        <div class="w3-container w3-auto">
+            <div class="w3-dropdown-hover w3-purple">
+                <button class="w3-button">Hover Over Me!</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- footer with your name on it -->
+
+        <footer class="w3-container w3-theme-d5 w3-center">bobjbo <a href="../index.html">Back</a></footer>
+
+
+        <!-- DO NOT CHANGE THE SCRIPT -->
+        <script>
+        function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+
+        </script>
+    </body>
+</html>

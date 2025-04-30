@@ -5,31 +5,35 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
         <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-purple.css">
+        <link rel="stylesheet" href="styles.css">
+
 
         <script src="project.js"></script>
     </head>
 
     <body>
         <!-- Sidebar -->
-        <div class="w3-sidebar w3-bar-block w3-theme-l2" style="display:none;z-index:5; margin-top: -75px;" id="mySidebar">
+        <div class="w3-sidebar w3-bar-block w3-theme-l2 w3-animate-left" style="display:none;z-index:5; margin-top: -75px;" id="mySidebar">
             <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
-            <a href="" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <a href="" class="w3-bar-item w3-button w3-white">Home</a>
+            <a href="subpages/youtube.html" class="w3-bar-item w3-button">Favorite Videos</a>
+            <a href="#" class="w3-bar-item w3-button"></a>
+            <a href="#" class="w3-bar-item w3-button"></a>
+
         </div>
         
         <!-- Overlay -->
-        <div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+        <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
         
         <!-- Page content -->
-        <div class="w3-top w3-black">
+        <div class="w3-top w3-black w3-animate-opacity">
             <button class="w3-button w3-xxlarge" onclick="w3_open()">&#9776;</button>
         </div>
 
-        <div class="w3-container" style="margin-top: 75px;">
+        <div class="w3-container w3-animate-left" style="margin-top: 75px;">
 
             <!--Profile Picture Card-->
-            <div class="w3-card-4 w3-padding w3-round-large w3-theme-d5 w3-left" style="width: 30%; margin: 1%">
+            <div class="w3-card-4 w3-round-large w3-theme-d5 w3-left" id="user" style="margin: 1%; padding: 8px 16px 20px 16px ;">
 
                 <br>
                
@@ -57,11 +61,10 @@
                 </div>
 
                 <br>
-                <br>
             </div>
 
 
-            <div class="w3-card-4 w3-padding w3-round-large w3-theme-d5 w3-right" style="width: 65%; margin: 1%;">
+            <div class="w3-card-4 w3-padding w3-round-large w3-theme-d5 w3-right w3-animate-right" id="info" style="margin: 1%;">
 
                
 

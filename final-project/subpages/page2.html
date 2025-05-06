@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-deep-purple.css">
+        <link rel="stylesheet" href="../styles.css">
+
+        <title>.</title>
+
+    </head>
+
+    <body style="background-color: black;">
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-theme-l2 w3-animate-left" style="display:none;z-index:5;" id="mySidebar">
+            <button class="w3-bar-item w3-button" onclick="w3_close()">Close</button>
+            <a href="../project.html" class="w3-bar-item w3-button">Home</a>
+            <a href="youtube.html" class="w3-bar-item w3-button">Favorite Videos</a>
+            <a href="https://bobjbo.github.io/KiwanisExamplePage/" class="w3-bar-item w3-button">Kiwanis Site</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="page2.html" class="w3-bar-item w3-button w3-white"></a>
+        </div>
+        
+        <!-- Overlay -->
+        <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+        
+        <!-- Page content -->
+        <div class="w3-top w3-black w3-animate-opacity">
+            <button class="w3-button w3-small w3-hover-red" onclick="w3_open()">ESCAPE</button>
+        </div>
+
+        <div class="w3-container w3-display-middle">
+            <img src="../images/eye.png">
+        </div>
+       
+        <p class="w3-display-bottommiddle w3-black">I've seen what you've done.</p>
+        
+        <audio id="audio">
+            <source src="../images/known.mp3" type="audio/mp3">
+        </audio>
+
+        <script src="../project.js"></script>
+
+    </body>
+</html>
